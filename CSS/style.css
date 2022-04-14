@@ -1,0 +1,207 @@
+:root{
+    --dark: #19283F;
+    --sec: #33d1cc;
+    --red: #ff3150;
+    --yellow: #FFC400;
+    --light-blue: #eff7fa;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+.main-btn{
+    background-color: var(--red);
+    color: var(--yellow);
+}
+.main-btn:hover{
+    color: var(--yellow);
+}
+.main-title::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: #33d1cc;
+    display: inline-block;
+}
+
+/* START NAVBAR */
+.navbar{
+    background-color: var(--dark);
+}
+.navbar .navbar-nav .nav-link{
+    color: #fff;
+}
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover{
+    color: var(--sec);
+}
+.navbar .navbar-toggler{
+    color: white;
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+    border: none;
+}
+.search{
+    color: var(--sec);
+    border-left: 1px solid var(--sec)
+}
+
+
+/* END NAVBAR */
+
+/* START LANDING SECTION */
+.landing{
+    background-color: var(--dark);
+    min-height: calc(100vh - 70px);
+}
+/* END LANDING SECTION */
+
+/* START FEATURES SECTION */
+.num-icon{
+    font-size: 12rem;
+    color: var(--light-blue);
+}
+.feature-icon{
+    color: var(--sec);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+}
+.feature-content h4{
+    color: var(--yellow);
+}
+/* END FEATURES SECTION */
+
+/* START OUR WORK SECTION */
+.our-work,
+.team{
+    background-color: var(--light-blue);
+}
+.work{
+    border: 5px solid #fff;
+    overflow: hidden;
+}
+.our-work ul li{
+    color: #212529;
+    cursor: pointer;
+}
+.our-work ul li.active{
+    background-color: var(--red);
+    color: var(--yellow);
+}
+.our-work ul li:not(.active):hover{
+    color: var(--red);
+}
+.work::after{
+    /* content: "Appliaction"; */
+    content: attr(data-work);
+    background-color: #33d1ccc2;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 500;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+.work:hover::after{
+    width: 100%;
+}
+/* END OUR WORK SECTION */
+
+/* START STUFF SECTION */
+.description{
+    max-width: 500px;
+}
+/* END STUFF SECTION */
+
+/* START TEAM SECTION */
+.team{
+    padding-top: 80px;
+    margin-top: 10px;
+}
+.team h2{
+    color: var(--yellow);
+}
+.team-member h4{
+    background-color: var(--sec);
+}
+/* END TEAM SECTION */
+
+/* START PROJECT SECTION */
+.project,
+footer{
+    background-color: var(--dark);
+}
+/* END PROJECT SECTION */
+
+/* SUBSRIBE SECTION START */
+.subsribe{
+    background-color: var(--yellow);
+}
+.subscribe-btn,
+.subscribe-btn:hover{
+    background-color: var(--dark);
+    color: var(--yellow);
+}
+.form-control:focus,
+.form-control{
+    box-shadow: none;
+    background-color: inherit;
+    border: 0;
+    color: #fff;
+}
+.form-control::placeholder{
+    color: #fff;
+}
+/* SUBSRIBE SECTION END */
+
+/* FOOTER SECTION START */
+.copyright span{
+    color: var(--sec);
+}
+.copyright div span{
+    color: var(--yellow);
+}
+.links a,
+.info a{
+    text-decoration: none;
+    color: #ffffff80;
+    text-transform: capitalize;
+    display: block;
+    line-height: 2;
+}
+.links a:hover,
+.info a:hover{
+    color: var(--sec);
+}
+.social a{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #fff;
+}
+.facebook,
+.facebook:hover{
+    background-color: #1877f2;
+}
+.twitter{
+    background-color: #1da1f2;
+}
+.linkedin{
+    background-color: #0077b5;
+}
+.youtube{
+    background-color: #ff0000;
+}
+/* FOOTER SECTION END */
